@@ -109,6 +109,10 @@
   ```bash
   skopeo copy --src-creds rhn-support-hyou:You2707you! --src-tls-verify=false --dest-creds admin:r3dh4t1! --dest-tls-verify=false docker://registry.redhat.io/rhscl/httpd-24-rhel7:2.4-152 docker://10.76.168.60:8443/repository/admin/test/httpd-24-rhel7:2.4-152
   ```
+  
+- Image Push 결과
+
+  ![05_image_push_result](https://github.com/justone0127/all-in-one-Quay-Instance/blob/main/images/05_image_push_result.png)
 
   
 
