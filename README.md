@@ -77,21 +77,21 @@
 
   크롬에서는 보안이 인증되지 않은 인증서이기 때문에 접속이 차단되므로, 파이어폭스를 이용하여 접속합니다.
 
-  ![01_quay_console](C:\Works\01_자료\01_OCP\05_OCP_Demo_hyou\openshift-mirror-registry-all-in-one\01_quay_console.png)
+  ![01_quay_console](https://github.com/justone0127/all-in-one-Quay-Instance/blob/main/images/01_quay_console.png)
 
 - 계정은 위에 정보를 확인하여 로그인 (user: init / password: 3lRTK9py7H80Z2QsSrnq4a5u1XIFNB6z )
 
-  ![02_console_login](C:\Works\01_자료\01_OCP\05_OCP_Demo_hyou\openshift-mirror-registry-all-in-one\02_console_login.png)
+  ![02_console_login](https://github.com/justone0127/all-in-one-Quay-Instance/blob/main/images/02_console_login.png)
 
 ### 3. 계정 생성
 
 - Create Account 메뉴를 통해 새로운 계정 생성
 
-  ![03_new_account](C:\Works\01_자료\01_OCP\05_OCP_Demo_hyou\openshift-mirror-registry-all-in-one\03_new_account.png)
+  ![03_new_account](https://github.com/justone0127/all-in-one-Quay-Instance/blob/main/images/03_new_account.png)
 
 - 새로운 계정으로 로그인
 
-  ![04_new_account_login](C:\Works\01_자료\01_OCP\05_OCP_Demo_hyou\openshift-mirror-registry-all-in-one\04_new_account_login.png)
+  ![04_new_account_login](https://github.com/justone0127/all-in-one-Quay-Instance/blob/main/images/04_new_account_login.png)
 
 ### 4. Image Push
 
