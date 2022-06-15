@@ -69,7 +69,7 @@
 - 로그인
 
   ```bash
-  [root@bastion test]# podman login -u init -p 3lRTK9py7H80Z2QsSrnq4a5u1XIFNB6z --tls-verify=false 10.76.168.60:8443
+  [root@bastion test]# podman login -u init -p 3lRTK9py7H80Z2QsSrnq4a5u1XIFNB6z --tls-verify=false ${QUAY_REGISTRY_IP}:{$PORT}
   Login Succeeded!
   ```
 
@@ -98,7 +98,7 @@
 - 새로운 계정으로 로그인
 
   ```bash
-  [root@bastion test]# podman login -u admin -p 'r3dh4t1!' --tls-verify=false 10.76.168.60:8443
+  [root@bastion test]# podman login -u ${QUAY_USER} -p ${QUAY_PWD} --tls-verify=false ${QUAY_REGISTRY_IP}:{$PORT}
   Login Succeeded!
   ```
 
@@ -107,7 +107,7 @@
   외부 이미지 레지스트리 이미지를 해당 레지스트리로 푸시해보도록 하겠습니다.
 
   ```bash
-  skopeo copy --src-creds ${USER}:${PWD} --src-tls-verify=false --dest-creds ${QUAY_USER}:${QUAY_PWD} --dest-tls-verify=false docker://registry.redhat.io/rhscl/httpd-24-rhel7:2.4-152 docker://${QUAY_REGISTRY_IP}:{$PORT}/repository/admin/test/httpd-24-rhel7:2.4-152
+  skopeo copy --src-creds ${USERNAME}:${PASSWORD} --src-tls-verify=false --dest-creds ${QUAY_USER}:${QUAY_PWD} --dest-tls-verify=false docker://registry.redhat.io/rhscl/httpd-24-rhel7:2.4-152 docker://${QUAY_REGISTRY_IP}:{$PORT}/repository/admin/test/httpd-24-rhel7:2.4-152
   ```
   
 - Image Push 결과
