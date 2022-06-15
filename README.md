@@ -107,7 +107,7 @@
   외부 이미지 레지스트리 이미지를 해당 레지스트리로 푸시해보도록 하겠습니다.
 
   ```bash
-  skopeo copy --src-creds rhn-support-hyou:You2707you! --src-tls-verify=false --dest-creds admin:r3dh4t1! --dest-tls-verify=false docker://registry.redhat.io/rhscl/httpd-24-rhel7:2.4-152 docker://10.76.168.60:8443/repository/admin/test/httpd-24-rhel7:2.4-152
+  skopeo copy --src-creds ${USER}:${PWD} --src-tls-verify=false --dest-creds ${QUAY_USER}:${QUAY_PWD} --dest-tls-verify=false docker://registry.redhat.io/rhscl/httpd-24-rhel7:2.4-152 docker://${QUAY_REGISTRY_IP}:{$PORT}/repository/admin/test/httpd-24-rhel7:2.4-152
   ```
   
 - Image Push 결과
